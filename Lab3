@@ -1,0 +1,23 @@
+include <stdio.h>
+
+int main() {
+    
+    int sayi;
+    printf("Bir tamsayi girin: ");
+    scanf("%d", &sayi);
+
+   
+    int carpim = 1;
+
+    
+    int i = 2;  // Çift sayılar 2'den başlar
+    while (i <= sayi) {
+        carpim *= i;
+        i += 2; 
+    }
+
+    
+    printf("1'den %d'e kadar olan cift sayilarin carpimi: %d\n", sayi, carpim);
+
+    return 0;
+}
